@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shopping form page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/shoppingForm.css">
+
+<script src="js/shoppingForm.js"></script>
+
+
+  
+</head>
+<body>
+    
+    <div class="header">
+       <div class="container-header">
+        <div class="nav-left"> 
+            <p><a href="home.html" style="text-decoration: none;color:#fff"><span style="color:yellow">C</span>ity<span style="color:yellow">M</span>arket&nbsp;</a></p>
+            <p id="just-logo"><a href="home.html"><img id="#just-logo" src="images/city.png"></a></p>
+      </div>
+      <div class="nav-center"> 
+        <div class="list"> 
+            <div class="nav">
+                <ul> 
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="item.html">Items</a></li>
+                    <li><a href="ShoppingForm.html">Shopping<i class="fas fa-shopping-cart" style="color:red"></i></a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+             
+            <div class="basket">
+                <a href="ShoppingForm.html"><img src="images/baskett.png" style="margin-top:21px;"></i></a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+         <button class="dropbtn"><i><img src="images/bar.png"></i></button>
+         <div class="dropdown-content">
+            <a href="home.html">Home</a>
+            <a href="item.html">Items</a>
+            <a href="ShoppingForm.html">Shopping</a>
+            <a href="contact.html">Contact</a>
+        </div>
+       </div> 
+        
+    </div>
+        
+       </div>
+    </div>
+
+    <div class="research">
+        <div class="left">
+              <a href="https://www.who.int/health-topics/coronavirus" style="color:#000">Coronavirus info</a>
+        </div>
+        <div class="right">
+            <div class="search">
+                <input type="text" name="search" placeholder="search here....">
+                <button id="btnS" class="btn-search" style="cursor: pointer;"><i><img src="images/searchh.png" style="width:20px; height:20px;margin-top: 5px;;"></i></button>
+    
+                <script type="text/javascript">
+                          function validation(){
+                              var txt = document.getElementById("text").value;
+       
+                              if(txt == ""){
+                                  alert('Search field empty!')
+                              }
+                          }
+                          document.getElementById("btnS").addEventListener("click", validation);
+                   </script>
+           </div>
+            
+     </div>
+     </div>
+    
+    <div class="main">
+        <a href="#total" style="text-align:center;color:#000">go down for total price after discount</a>
+        <div class="container1">
+            <div class="box b1" style="text-align:center">
+                <p>SAUCEPAN</p>
+                <div class="picture">
+                   <img src="images/saucepan1.jpg" alt="invalid" id="pic">
+                </div>
+                <p>TYPES</p>
+                <div class="property">
+                    <div class="prop p1">
+                         <a onclick="return changePictureTypeSp1()"><img src="images/saucepan1.jpg"></a>
+                    </div>
+                    <div class="prop p2">
+                        <a onclick="return changePictureTypeSp2()"><img src="images/saucepan2.jpg"></a>
+                    </div>
+                    <div class="prop p3">
+                        <a onclick="return changePictureTypeSp3()"><img src="images/saucepan3.jpg"></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="box b2">
+                <p style="text-align:center;">PRICE</p>
+                <p style="text-align:center;margin-left: 12%;"><span id="price">150</span><span id="tlP">TL</span></p>
+                <div class="counter">
+                    <div class="c btnMinus">
+                         <button id="btnM" onclick="return counterDown()">-</button>
+                    </div>
+                    <div class="c display" >
+                        <p id="counterScreen" style="text-align:center">0</p>
+                    </div>
+                    <div class="c btnPlus">
+                        <button id="btnp" onclick="return counterUp()">+</button>
+                   </div>
+                </div>
+            </div>
+            <div class="box b3" style="text-align:center">
+                <p>TOTAL PRICE</p>
+                <p><span id="totPrice">0</span><span span id="tlTp">TL</span></p>
+            </div>
+        </div>
+
+
+        <div class="container2">
+            <div class="box b1" style="text-align:center">
+                <p>LIGHTER</p>
+                <div class="picture">
+                   <img src="images/lighter1.jpg" alt="invalid" id="pic2">
+                </div>
+                <p>TYPES</p>
+                <div class="property">
+                    <div class="prop p1">
+                         <a onclick="return changePictureTypeSp4()"><img src="images/lighter1.jpg"></a>
+                    </div>
+                    <div class="prop p2">
+                        <a onclick="return changePictureTypeSp5()"><img src="images/lighter2.jpg"></a>
+                    </div>
+                    <div class="prop p3">
+                        <a onclick="return changePictureTypeSp6()"><img src="images/lighter3.jpg"></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="box b2">
+                <p style="text-align:center;">PRICE</p>
+                <p style="text-align:center;margin-left: 12%;"><span id="priceL">20</span><span id="tlP">TL</span></p>
+                <div class="counter">
+                    <div class="c btnMinus">
+                         <button id="btnM" onclick="return counterDown1()">-</button>
+                    </div>
+                    <div class="c display" >
+                        <p id="counterScreen1" style="text-align:center">0</p>
+                    </div>
+                    <div class="c btnPlus">
+                        <button id="btnp" onclick="return counterUp1()">+</button>
+                   </div>
+                </div>
+            </div>
+            <div class="box b3" style="text-align:center">
+                <p>TOTAL PRICE</p>
+                <p><span id="totPriceL">0</span><span span id="tlTLl">TL</span></p>
+            </div>
+        </div>
+    
+    
+    <div class="container3">
+        <div class="box b1" style="text-align:center">
+            <p>SAUCEPAN</p>
+            <div class="picture">
+               <img src="images/kinfe1.jpg" alt="invalid" id="pic3">
+            </div>
+            <p>TYPES</p>
+            <div class="property">
+                <div class="prop p1">
+                     <a onclick="return changePictureTypeSp7()"><img src="images/kinfe1.jpg"></a>
+                </div>
+                <div class="prop p2">
+                    <a onclick="return changePictureTypeSp8()"><img src="images/knife2.jpg"></a>
+                </div>
+                <div class="prop p3">
+                    <a onclick="return changePictureTypeSp9()"><img src="images/knife3.jpg"></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="box b2">
+            <p style="text-align:center;">PRICE</p>
+            <p style="text-align:center;margin-left: 12%;"><span id="priceK">50</span><span id="tlPK">TL</span></p>
+            <div class="counter">
+                <div class="c btnMinus">
+                     <button id="btnM" onclick="return counterDown2()">-</button>
+                </div>
+                <div class="c display" >
+                    <p id="counterScreen2" style="text-align:center">0</p>
+                </div>
+                <div class="c btnPlus">
+                    <button id="btnp" onclick="return counterUp2()">+</button>
+               </div>
+            </div>
+        </div>
+        <div class="box b3" style="text-align:center">
+            <p>TOTAL PRICE</p>
+            <p><span id="totPriceK">0</span><span span id="tlTpK">TL</span></p>
+        </div>
+    </div>
+</div>
+</div>
+
+    
+    </div>
+
+    
+    <div class="totAmount">
+        <div class="container" id="total">
+            <div class="box discount">
+                <p>5% discount</p>
+            </div>
+            <div class="box btnCalcul">
+                <button onclick="return calclulateTot();">Calculate</button>
+            </div>
+            <div class="box result">
+                <p style="text-align:center"><span id="totCal">0</span>TL</p>
+            </div>
+            <div class="box payement">
+               <a href="#">PAYEMENT</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="daily-news"> 
+            <h1>Sign up for our daily newspaper</h1>
+            <div>
+             <input id="text" type="text" name="search" placeholder="123abc@gmail.com">
+             <button id="btn" style="cursor: pointer;"><i><img src="images/signup.png"></i></button>
+
+             <script type="text/javascript">
+             function validateEmail(email) {
+                const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                  return re.test(email);
+                    }
+                   function validation(){
+                       var email = document.getElementById("text").value;
+
+                       if(email == ""){
+                           alert('enter your email first!.')
+                       }else{
+                        if (validateEmail(email)) {
+                            
+                        }else{
+                             alert('Email not valid');
+                                     }
+                       }
+                   }
+                   document.getElementById("btn").addEventListener("click", validation);
+            </script>
+            </div>
+       </div>
+       <p>&copy;CityMarket 2021 copyright, all right reserved.</p>
+    </div>
+</body>
+</html>

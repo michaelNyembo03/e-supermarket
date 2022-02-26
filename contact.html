@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/contact.css">
+<script src="js/contactFormValidation.js"></script>
+ 
+</head>
+<body>
+    
+    <div class="header">
+       <div class="container-header">
+        <div class="nav-left"> 
+            <p><a href="home.html" style="text-decoration: none;color:#fff"><span style="color:yellow">C</span>ity<span style="color:yellow">M</span>arket&nbsp;</a></p>
+            <p id="just-logo"><a href="home.html"><img id="#just-logo" src="images/city.png"></a></p>
+      </div>
+            <div class="nav-center"> 
+                <div class="list"> 
+                    <div class="nav">
+                        <ul> 
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="item.html">Items</a></li>
+                            <li><a href="ShoppingForm.html">Shopping<i class="fas fa-shopping-cart" style="color:red"></i></a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                     
+                    <div class="basket">
+                        <a href="ShoppingForm.html"><img src="images/baskett.png" style="margin-top:21px;"></i></a>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                 <button class="dropbtn"><i><img src="images/bar.png"></i></button>
+                 <div class="dropdown-content">
+                    <a href="home.html">Home</a>
+                    <a href="item.html">Items</a>
+                    <a href="ShoppingForm.html">Shopping</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+               </div> 
+                
+            </div>
+        
+       </div>
+    </div>
+
+    <div class="research">
+       <div class="left">
+             <a href="https://www.who.int/health-topics/coronavirus" style="color:#000;">Coronavirus info</a>
+       </div>
+       <div class="right">
+        <div class="search">
+            <input type="text" id="stext" name="search" placeholder="search here....">
+            <button id="btnS" class="btn-search" style="cursor: pointer;"><i><img src="images/searchh.png" style="width:20px; height:20px;margin-top: 5px;;"></i></button>
+
+            <script type="text/javascript">
+                      function validateS(){
+                          var txt = document.getElementById("stext").value;
+   
+                          if(txt == ""){
+                              alert('Search field empty!')
+                          }
+                      }
+                      document.getElementById("btnS").addEventListener("click", validateS);
+               </script>
+       </div>
+           
+    </div>
+    </div>
+    
+    <div class="main">
+
+        <div class="container" id="containerContact">
+            <form action="" name="contactForm" onsubmit="return validationContactForm();">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Democratic Republic of Congo</option>
+                <option value="canada">Republic of South Africa</option>
+                <option value="usa">Uganda</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="daily-news"> 
+            <h1>Sign up for our daily newspaper</h1>
+            <div>
+             <input id="text" type="text" name="search" placeholder="123abc@gmail.com">
+             <button id="btn"><i><img src="images/signup.png"></i></button>
+
+             <script type="text/javascript">
+             function validateEmail(email) {
+                const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                  return re.test(email);
+                    }
+                   function validate(){
+                       var email = document.getElementById("text").value;
+
+                       if(email == ""){
+                           alert('enter your email first!.')
+                       }else{
+                        if (validateEmail(email)) {
+                            
+                        }else{
+                             alert('Email not valid');
+                                     }
+                       }
+                   }
+                   document.getElementById("btn").addEventListener("click", validate);
+            </script>
+            </div>
+       </div>
+       <p>&copy;CityMarket 2021 copyright, all right reserved.</p>
+    </div>
+</body>
+</html>

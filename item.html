@@ -1,0 +1,1221 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Item page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/item.css">
+
+<script src="js/dropdownlist.js"></script>
+<script src="js/categorydisplay.js"></script>
+
+
+  
+</head>
+<body>
+    
+    <div class="header">
+       <div class="container-header">
+        <div class="nav-left"> 
+            <p><a href="home.html" style="text-decoration: none;color:#fff"><span style="color:yellow">C</span>ity<span style="color:yellow">M</span>arket&nbsp;</a></p>
+            <p id="just-logo"><a href="home.html"><img id="#just-logo" src="images/city.png"></a></p>
+      </div>
+      <div class="nav-center"> 
+        <div class="list"> 
+            <div class="nav">
+                <ul> 
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="item.html">Items</a></li>
+                    <li><a href="ShoppingForm.html">Shopping<i class="fas fa-shopping-cart" style="color:red"></i></a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+             
+            <div class="basket">
+                <a href="ShoppingForm.html"><img src="images/baskett.png" style="margin-top:21px;"></i></a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+         <button class="dropbtn"><i><img src="images/bar.png"></i></button>
+         <div class="dropdown-content">
+            <a href="home.html">Home</a>
+            <a href="item.html">Items</a>
+            <a href="ShoppingForm.html">Shopping</a>
+            <a href="contact.html">Contact</a>
+        </div>
+       </div> 
+        
+    </div>
+        
+       </div>
+    </div>
+
+    <div class="research">
+        <div class="left">
+              <a href="https://www.who.int/health-topics/coronavirus" style="color:#000">Coronavirus info</a>
+        </div>
+        <div class="right">
+            <div class="search">
+                <input type="text" name="search" placeholder="search here....">
+                <button id="btnS" class="btn-search" style="cursor: pointer;"><i><img src="images/searchh.png" style="width:20px; height:20px;margin-top: 5px;;"></i></button>
+    
+                <script type="text/javascript">
+                          function validation(){
+                              var txt = document.getElementById("text").value;
+       
+                              if(txt == ""){
+                                  alert('Search field empty!')
+                              }
+                          }
+                          document.getElementById("btnS").addEventListener("click", validation);
+                   </script>
+           </div>
+            
+     </div>
+     </div>
+    <div class="main">
+        <div class="category-list"> 
+             
+            <div class="dropdown-list">
+                <button onclick="myFunction()" class="dropbtn">Shop by Category &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-plus"></i></button>
+                <div id="myDropdown" class="drpdwn-content">
+                  <a href="#" onclick="return myGame()">Video Game</a>
+                  <a href="#" onclick="return myElectronic()">Electronics</a>
+                  <a href="#" onclick="return furniture()">Furniture</a>
+                  <a href="#" onclick="return myPatio()">Patio and Garden</a>
+                  <a href="#" onclick="return myWomanClothing()">Women's clothing</a>
+                  <a href="#" onclick="return myFood()">Food</a>
+                  <a href="#" onclick="return myComputer()">PCs and Laptops</a>
+                  <a href="#" onclick="return myMobile()">Smartphones and tablets</a>
+                  <a href="#" onclick="return myShoes()">Shoes</a>
+                  <a href="#" onclick="return myMenClothing()">Men's clothing</a>
+                  
+                </div>
+              
+              </div>
+        </div>
+
+
+
+
+       
+        <div class="menu-item">
+            
+            <!-- category 0 -->
+
+           <div id="cate0" class="cate category0"> 
+
+            <p class="label-cat">ITEMS</p>
+             
+            <div class="items"> 
+
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/woman/sport.jpg" alt="invalid pic">
+                       <a href="#">TIGHT</a>
+                    </div>
+                    <p><b>70TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Food/berries.jpg" alt="invalid pic">
+                       <a href="#">BERRIES</a>
+                    </div>
+                    <p><b>100TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/PC and Latops/AppleMacBook.jpg" alt="invalid pic">
+                       <a href="#">MACBOOk Air</a>
+                    </div>
+                    <p><b>15000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Smartphones and Tablets/huawei-mate40-rs-1.jpg" alt="invalid pic">
+                       <a href="#">HAWEI</a>
+                    </div>
+                    <p><b>1500TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/game/playstation/2k.jpg" alt="invalid pic">
+                       <a href="#">NBA 2K</a>
+                    </div>
+                    <p><b>100TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+               
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/game/xbox/princess.jpg" alt="invalid pic">
+                           <a href="#">U. PRINCESS</a>
+                        </div>
+                        <p><b>100TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/electronics/speaker.jpg" alt="invalid pic">
+                           <a href="#">SPEAKER</a>
+                        </div>
+                        <p><b>700TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/electronics/smartDevice.png" alt="invalid pic">
+                           <a href="#">S. DEVICE</a>
+                        </div>
+                        <p><b>1200TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/FURNITURE/bathroom.jpg" alt="invalid pic">
+                           <a href="#">BATHROOM KIT</a>
+                        </div>
+                        <p><b>7000TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/FURNITURE/bedroom.jpg" alt="invalid pic">
+                           <a href="#">BEDROOM KIT</a>
+                        </div>
+                        <p><b>9000TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/FURNITURE/livingroom.jpg" alt="invalid pic">
+                           <a href="#">L. ROOM KIT</a>
+                        </div>
+                        <p><b>12000TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/garden/gardenchain.jpg" alt="invalid pic">
+                           <a href="#">CHAIR</a>
+                        </div>
+                        <p><b>400TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                </div>
+           </div>
+           <!-- end category 0 -->
+
+
+            <!-- category 1 -->
+
+           <div id="cate1" class="cate category1"> 
+
+            <p class="label-cat">Games</p>
+             
+            <div class="items"> 
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/game/playstation/2k.jpg" alt="invalid pic">
+                       <a href="#">NBA 2K</a>
+                    </div>
+                    <p><b>100TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/game/playstation/foot.jpg" alt="invalid pic">
+                       <a href="#">FIFA 19</a>
+                    </div>
+                    <p><b>100TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/game/playstation/skate.jpg" alt="invalid pic">
+                       <a href="#">SKATER</a>
+                    </div>
+                    <p><b>100TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/game/playstation/turbo.jpg" alt="invalid pic">
+                       <a href="#">HOT WHEELS</a>
+                    </div>
+                    <p><b>100TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/game/playstation/sphalt.jpg" alt="invalid pic">
+                       <a href="#">ASPHALT</a>
+                    </div>
+                    <p><b>100TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/game/playstation/cobrakai.jpg" alt="invalid pic">
+                       <a href="#">COBRAKAI</a>
+                    </div>
+                    <p><b>100TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/game/xbox/nba.jpg" alt="invalid pic">
+                           <a href="#">NBA 2K19</a>
+                        </div>
+                        <p><b>100TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/game/xbox/soccer.jpg" alt="invalid pic">
+                           <a href="#">SOCCER</a>
+                        </div>
+                        <p><b>100TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/game/xbox/moto.jpg" alt="invalid pic">
+                           <a href="#">MOTOGP 20</a>
+                        </div>
+                        <p><b>100TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/game/xbox/tade.jpg" alt="invalid pic">
+                           <a href="#">TADE EMPIRE</a>
+                        </div>
+                        <p><b>100TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/game/xbox/princess.jpg" alt="invalid pic">
+                           <a href="#">U. PRINCESS</a>
+                        </div>
+                        <p><b>100TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/game/xbox/call.jpg" alt="invalid pic">
+                           <a href="#">CALL OF DUTY</a>
+                        </div>
+                        <p><b>100TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                </div>
+           </div>
+
+
+           <!-- end category1 -->
+
+
+
+           <!-- category 2 -->
+           <div id="cate2" class="cate category2"> 
+
+            <p class="label-cat">Electronics</p>
+            <div class="items"> 
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/electronics/radio.jpg" alt="invalid pic">
+                       <a href="#">RADIO</a>
+                    </div>
+                    <p><b>999TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/electronics/tv.png" alt="invalid pic">
+                       <a href="#">TV</a>
+                    </div>
+                    <p><b>2499TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/electronics/speaker.jpg" alt="invalid pic">
+                       <a href="#">SPEAKER</a>
+                    </div>
+                    <p><b>700TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/electronics/smartDevice.png" alt="invalid pic">
+                       <a href="#">S. DEVICE</a>
+                    </div>
+                    <p><b>1200TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/electronics/nintendo.jpg" alt="invalid pic">
+                       <a href="#">NINTENDO</a>
+                    </div>
+                    <p><b>1099TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/electronics/xbox.webp" alt="invalid pic">
+                       <a href="#">X-BOX</a>
+                    </div>
+                    <p><b>3200TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/electronics/playstation.jpg" alt="invalid pic">
+                       <a href="#">PLAYSTAION</a>
+                    </div>
+                    <p><b>4999TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/electronics/sega.jpeg" alt="invalid pic">
+                       <a href="#">SEGA</a>
+                    </div>
+                    <p><b>1500TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+
+                
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/electronics/psp.jpeg" alt="invalid pic">
+                           <a href="#">PSP</a>
+                        </div>
+                        <p><b>1099TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/electronics/stove.jpg" alt="invalid pic">
+                           <a href="#">STOVE</a>
+                        </div>
+                        <p><b>2000TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/electronics/hoven.jpg" alt="invalid pic">
+                           <a href="#">HOVEN</a>
+                        </div>
+                        <p><b>2600TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/electronics/pan.jpg" alt="invalid pic">
+                           <a href="#">CAMERA</a>
+                        </div>
+                        <p><b>5000TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div> 
+
+                </div>
+           </div>
+
+
+
+           <!-- end category 2 -->
+
+
+
+           <!-- category 3 -->
+           <div id="cate3" class="cate category3"> 
+
+            <p class="label-cat">Furniture</p>
+            <div class="items"> 
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/FURNITURE/couch.jpg" alt="invalid pic">
+                       <a href="#">COUCH</a>
+                    </div>
+                    <p><b>2000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/FURNITURE/cupboard.jpg" alt="invalid pic">
+                       <a href="#">CUPBOARD</a>
+                    </div>
+                    <p><b>1000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/FURNITURE/bathroom.jpg" alt="invalid pic">
+                       <a href="#">BATHROOM KIT</a>
+                    </div>
+                    <p><b>7000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/FURNITURE/bedroom.jpg" alt="invalid pic">
+                       <a href="#">BEDROOM KIT</a>
+                    </div>
+                    <p><b>9000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/FURNITURE/livingroom.jpg" alt="invalid pic">
+                       <a href="#">L. ROOM KIT</a>
+                    </div>
+                    <p><b>12000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/FURNITURE/sittingroom.jpg" alt="invalid pic">
+                       <a href="#">S. ROOM KIT</a>
+                    </div>
+                    <p><b>11000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/FURNITURE/diningroom.jpg" alt="invalid pic">
+                       <a href="#">D. ROOM KIT</a>
+                    </div>
+                    <p><b>13000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/FURNITURE/kitchen.jpg" alt="invalid pic">
+                       <a href="#">KITCHEN KIT</a>
+                    </div>
+                    <p><b>18000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+
+                
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/FURNITURE/lampshade.jpg" alt="invalid pic">
+                           <a href="#">LAMPSHADE</a>
+                        </div>
+                        <p><b>700TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/FURNITURE/vacuum.jpg" alt="invalid pic">
+                           <a href="#">VACUUM</a>
+                        </div>
+                        <p><b>1600TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    
+
+                </div>
+           </div>
+
+
+
+           <!-- end category 3 -->
+
+
+
+           <!-- category 4 -->
+           <div id="cate4" class="cate category4"> 
+
+            <p class="label-cat">Patio and Garden</p>
+             
+            <div class="items"> 
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/garden/gardenchain.jpg" alt="invalid pic">
+                       <a href="#">CHAIR</a>
+                    </div>
+                    <p><b>400TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/garden/table.jpg" alt="invalid pic">
+                       <a href="#">TABLE</a>
+                    </div>
+                    <p><b>1200TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/garden/garden kit.jpg" alt="invalid pic">
+                       <a href="#">GARDEN KIT</a>
+                    </div>
+                    <p><b>10000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                
+
+                </div>
+           </div>
+
+
+
+           <!-- end category 4 -->
+
+
+
+
+
+
+           <!-- category 5 -->
+           <div id="cate5" class="cate category5"> 
+
+            <p class="label-cat">Women's Clothing</p>
+             
+            <div class="items"> 
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/woman/pant1.jpg" alt="invalid pic">
+                       <a href="#">PANT</a>
+                    </div>
+                    <p><b>100TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/woman/sport.jpg" alt="invalid pic">
+                       <a href="#">TIGHT</a>
+                    </div>
+                    <p><b>70TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/woman/shorts.jpg" alt="invalid pic">
+                       <a href="#">SHORT</a>
+                    </div>
+                    <p><b>80TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/woman/sports.jpg" alt="invalid pic">
+                       <a href="#">S. SHORT</a>
+                    </div>
+                    <p><b>100TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/woman/t-short.jpg" alt="invalid pic">
+                       <a href="#">T-SHIRT</a>
+                    </div>
+                    <p><b>30TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/woman/tshirt.jpg" alt="invalid pic">
+                       <a href="#">T-SHIRT</a>
+                    </div>
+                    <p><b>50TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/woman/shirt.jpg" alt="invalid pic">
+                       <a href="#">SHIRT</a>
+                    </div>
+                    <p><b>120TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/woman/shirtts.jpg" alt="invalid pic">
+                       <a href="#">SHIRT</a>
+                    </div>
+                    <p><b>150TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+
+                
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/woman/classic.jpg" alt="invalid pic">
+                           <a href="#">CLASSIC</a>
+                        </div>
+                        <p><b>450TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/woman/classicss.jpg" alt="invalid pic">
+                           <a href="#">CLASSIC</a>
+                        </div>
+                        <p><b>500TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>   
+                </div>
+           </div>
+
+
+
+           <!-- end category 5 -->
+
+
+
+
+           <!-- category 6 -->
+           <div id="cate6" class="cate category6"> 
+
+            <p class="label-cat">Food</p>
+             
+            <div class="items"> 
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Food/berries.jpg" alt="invalid pic">
+                       <a href="#">BERRIES</a>
+                    </div>
+                    <p><b>100TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Food/Bruschetta.jpg" alt="invalid pic">
+                       <a href="#">BRUSCHETTA</a>
+                    </div>
+                    <p><b>70TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Food/cantaloupe.jpg" alt="invalid pic">
+                       <a href="#">CANTALOUPE</a>
+                    </div>
+                    <p><b>109TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Food/delish pineapple baked salmon horizontal.jpg" alt="invalid pic">
+                       <a href="#">DELISH</a>
+                    </div>
+                    <p><b>50TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Food/eight_col_32917696_l.jpg" alt="invalid pic">
+                       <a href="#">EIGHT_COL</a>
+                    </div>
+                    <p><b>65TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Food/fast-food.jpg" alt="invalid pic">
+                       <a href="#">FAST-FOOD</a>
+                    </div>
+                    <p><b>90TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Food/fried chicken.jpeg" alt="invalid pic">
+                       <a href="#">FRIED CHICKEN</a>
+                    </div>
+                    <p><b>30TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Food/fruit_de_la_passion-large.jpg" alt="invalid pic">
+                       <a href="#">PASSION FRUIT</a>
+                    </div>
+                    <p><b>20TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+
+                
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/Food/Healthy Food Made Easy -min.jpg" alt="invalid pic">
+                           <a href="#">GOOD FOOD</a>
+                        </div>
+                        <p><b>170TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/Food/Vegetables.jpg" alt="invalid pic">
+                           <a href="#">VEGETABLE</a>
+                        </div>
+                        <p><b>5TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    
+
+                </div>
+           </div>
+
+
+
+           <!-- end category 6 -->
+
+
+
+
+           <!-- category 7 -->
+           <div id="cate7" class="cate category7"> 
+
+            <p class="label-cat">Pc and Laptops</p>
+             
+            <div class="items"> 
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/PC and Latops/Apple M1 iMac.jpeg" alt="invalid pic">
+                       <a href="#">M1 iMACc</a>
+                    </div>
+                    <p><b>17000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/PC and Latops/AppleMacBook.jpg" alt="invalid pic">
+                       <a href="#">MACBOOk Air</a>
+                    </div>
+                    <p><b>15000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/PC and Latops/Apple MacBook Air 13.jpg" alt="invalid pic">
+                       <a href="#">MACBOOK AIR</a>
+                    </div>
+                    <p><b>19000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/PC and Latops/ASUS ZenBook Pro Duo UX581 .jpg" alt="invalid pic">
+                       <a href="#">ASUS ZENBOOK</a>
+                    </div>
+                    <p><b>14000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/PC and Latops/Dell Optiplex 745.jpg" alt="invalid pic">
+                       <a href="#">DELL OPTIPLEX</a>
+                    </div>
+                    <p><b>18000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/PC and Latops/DELL XPS 15 (15 XPS 1255 SLR) Slim Laptop.jpg" alt="invalid pic">
+                       <a href="#">DELL XPS</a>
+                    </div>
+                    <p><b>19900TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/PC and Latops/gamegaraj.jpg" alt="invalid pic">
+                       <a href="#">GAME GARAJ</a>
+                    </div>
+                    <p><b>19000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/PC and Latops/HP 15-da2034TU.jpg" alt="invalid pic">
+                       <a href="#">HP</a>
+                    </div>
+                    <p><b>15000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+
+                
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/PC and Latops/HP Laptop 255 G7.jpg" alt="invalid pic">
+                           <a href="#">HP</a>
+                        </div>
+                        <p><b>15500TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/PC and Latops/Sapphire Pro Gaming PC with RTX 3060.jpg" alt="invalid pic">
+                           <a href="#">SAPHIRE PRO</a>
+                        </div>
+                        <p><b>18000TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                </div>
+           </div>
+
+
+
+           <!-- end category 7 -->
+
+
+
+
+           <!-- category 8 -->
+           <div id="cate8" class="cate category8"> 
+
+            <p class="label-cat">Smartphones and Tablets</p>
+             
+            <div class="items"> 
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Smartphones and Tablets/Apple iPad (2020) 8TH Gen Wi-Fi Gray.jpg" alt="invalid pic">
+                       <a href="#">IPAD</a>
+                    </div>
+                    <p><b>1700TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Smartphones and Tablets/galaxy_s21.jpg" alt="invalid pic">
+                       <a href="#">GALAXY S21</a>
+                    </div>
+                    <p><b>2000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Smartphones and Tablets/huawei-mate40-rs-1.jpg" alt="invalid pic">
+                       <a href="#">HAWEI</a>
+                    </div>
+                    <p><b>1500TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Smartphones and Tablets/iPhone 12 Pro Max 512GB blue.jpg" alt="invalid pic">
+                       <a href="#">IPHONE 12</a>
+                    </div>
+                    <p><b>4800TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Smartphones and Tablets/iphone-xs-silver.jpeg" alt="invalid pic">
+                       <a href="#">IPHONE XS</a>
+                    </div>
+                    <p><b>5000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Smartphones and Tablets/samsung-galaxy-s20-plus-4g-g985-8gb-ram-128gb-dual-sim-azul.jpg" alt="invalid pic">
+                       <a href="#">GALAXY S20+</a>
+                    </div>
+                    <p><b>2200TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Smartphones and Tablets/Samsung-Galaxy-Tab-S6.jpg" alt="invalid pic">
+                       <a href="#">GALAXY TAB-S6</a>
+                    </div>
+                    <p><b>1700TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Smartphones and Tablets/samsung-note-20-ultra.jpg" alt="invalid pic">
+                       <a href="#">SAM NOTE-20</a>
+                    </div>
+                    <p><b>2000TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+
+                
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/Smartphones and Tablets/Tablet 10.1 inch Android Tablet with 2GB+32GB.jpg" alt="invalid pic">
+                           <a href="#">TABLET</a>
+                        </div>
+                        <p><b>1500TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/Smartphones and Tablets/Xiaomi Mi 9.jpg" alt="invalid pic">
+                           <a href="#">XIAOMI MI_9</a>
+                        </div>
+                        <p><b>1400TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                </div>
+           </div>
+
+
+
+           <!-- end category 8 -->
+
+
+
+
+           <!-- category 9 -->
+           <div id="cate9" class="cate category9"> 
+
+            <p class="label-cat">Shoes</p>
+             
+            <div class="items"> 
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Shoes/Air Jordan 1 MID.jpeg" alt="invalid pic">
+                       <a href="#">AIR JORDAN</a>
+                    </div>
+                    <p><b>150TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Shoes/ChicWind Men's Breathable Leather Casual Shoes Lace Up Oxfords Dress Shoes Brown.jpg" alt="invalid pic">
+                       <a href="#">CHICWIND</a>
+                    </div>
+                    <p><b>170TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Shoes/El Paso El Paso Men's Brown Casual Genuine Leather Shoe.jpeg" alt="invalid pic">
+                       <a href="#">EL PASO</a>
+                    </div>
+                    <p><b>400TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Shoes/Fila Tennis Shoes - White.jpg" alt="invalid pic">
+                       <a href="#">FILA</a>
+                    </div>
+                    <p><b>200TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Shoes/flesh colored pumps.jpg" alt="invalid pic">
+                       <a href="#">FLESH COLORED</a>
+                    </div>
+                    <p><b>190TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Shoes/Flyer-Runner-Engineered-Knit-Men's-Running-Shoes.jpeg" alt="invalid pic">
+                       <a href="#">FLYER</a>
+                    </div>
+                    <p><b>250TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Shoes/Missoni.jpg" alt="invalid pic">
+                       <a href="#">MISONI</a>
+                    </div>
+                    <p><b>200TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Shoes/Sneaker.jpg" alt="invalid pic">
+                       <a href="#">SNEAKER</a>
+                    </div>
+                    <p><b>100TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+
+                
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/Shoes/Un Rio Strap.jpeg" alt="invalid pic">
+                           <a href="#">RIO STRAP</a>
+                        </div>
+                        <p><b>300TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/Shoes/Vikeduo.jpg" alt="invalid pic">
+                           <a href="#">VIKEDUO</a>
+                        </div>
+                        <p><b>500TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                </div>
+           </div>
+
+
+
+           <!-- end category 9 -->
+
+
+
+           <!-- category 10 -->
+           <div id="cate10" class="cate category10"> 
+
+            <p class="label-cat">Men's Clothing</p>
+             
+            <div class="items"> 
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Men's Clothing/2018-New-Men-Shirt-Spring-Long-Sleeve-Turn-Down-Brand-Solid-Dress-Shirts-Casual-Man-Shirts.jpg_640x640.jpg" alt="invalid pic">
+                       <a href="#">SHIRT</a>
+                    </div>
+                    <p><b>100TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Men's Clothing/AMI men's cloth.jpg" alt="invalid pic">
+                       <a href="#">SHIRT</a>
+                    </div>
+                    <p><b>120TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Men's Clothing/Bryan black tuxedo.jpg" alt="invalid pic">
+                       <a href="#">SUIT</a>
+                    </div>
+                    <p><b>700TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Men's Clothing/Casual-Long-Sleeves.jpg" alt="invalid pic">
+                       <a href="#">SHIRT</a>
+                    </div>
+                    <p><b>170TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Men's Clothing/Jackets Color Matching Casual Hoodie .jpg" alt="invalid pic">
+                       <a href="#">JACKET</a>
+                    </div>
+                    <p><b>300TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Men's Clothing/roberto-cavalli-irregular-logo-print-t-shirt_13752755_18865880_300.jpg" alt="invalid pic">
+                       <a href="#">T-SHIRT</a>
+                    </div>
+                    <p><b>70TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Men's Clothing/Rokka_clothing_dragon_pants_BIG.jpg" alt="invalid pic">
+                       <a href="#">PANT</a>
+                    </div>
+                    <p><b>190TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+                <div class="box1"> 
+                    <div class="pic"> 
+                       <img src="images/Men's Clothing/Shirts Ex M&S Pure Linen Relaxed Fit Shirt.jpeg" alt="invalid pic">
+                       <a href="#">SHIRT</a>
+                    </div>
+                    <p><b>150TL</b></p>
+                    <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                </div>
+
+                
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/Men's Clothing/slub_pocket T-shirt.jpg" alt="invalid pic">
+                           <a href="#">T-SHIRT</a>
+                        </div>
+                        <p><b>50TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                    <div class="box1"> 
+                        <div class="pic"> 
+                           <img src="images/Men's Clothing/Victor Jean .jpg" alt="invalid pic">
+                           <a href="#">PANT</a>
+                        </div>
+                        <p><b>160TL</b></p>
+                        <a href="ShoppingForm.html"><button>ADD TO BASKET</button></a>
+                    </div>
+                   
+
+                </div>
+           </div>
+
+
+
+           <!-- end category 10 -->
+                
+         </div>
+          
+    </div>
+ 
+ </div>
+ </div>
+</div>
+
+
+
+
+
+
+        
+
+             
+       </div>
+   
+    <div class="footer">
+        <div class="daily-news"> 
+            <h1>Sign up for our daily newspaper</h1>
+            <div>
+             <input id="text" type="text" name="search" placeholder="123abc@gmail.com">
+             <button id="btn" style="cursor: pointer;"><i><img src="images/signup.png"></i></button>
+
+             <script type="text/javascript">
+             function validateEmail(email) {
+                const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                  return re.test(email);
+                    }
+                   function validation(){
+                       var email = document.getElementById("text").value;
+
+                       if(email == ""){
+                           alert('enter your email first!.')
+                       }else{
+                        if (validateEmail(email)) {
+                            
+                        }else{
+                             alert('Email not valid');
+                                     }
+                       }
+                   }
+                   document.getElementById("btn").addEventListener("click", validation);
+            </script>
+            </div>
+       </div>
+       <p>&copy;CityMarket 2021 copyright, all right reserved.</p>
+    </div>
+</body>
+</html>
